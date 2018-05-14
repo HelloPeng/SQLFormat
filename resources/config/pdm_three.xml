@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <Object>
+        <Name>RootObject</Name>
+        <Namespace>o</Namespace>
+        <Child>
+            <Object>
+                <Name>Children</Name>
+                <Namespace>c</Namespace>
+                <Child>
+                    <Object>
+                        <Name>Model</Name>
+                        <Namespace>o</Namespace>
+                        <Child>
+                            <Object>
+                                <Name>Tables</Name>
+                                <Namespace>c</Namespace>
+                            </Object>
+                        </Child>
+                    </Object>
+                </Child>
+            </Object>
+        </Child>
+    </Object>
+</Root>
