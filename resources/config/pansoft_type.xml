@@ -1,0 +1,19 @@
+<ColumnMap>
+  <Column name="panoid" value="String" packages="java.lang.String"/>
+  <Column name="panint" value="Integer" packages="java.lang.Integer"/>
+  <Column name="pantinyint" value="Integer" packages="java.lang.Integer"/>
+  <Column name="pansmallint" value="Integer" packages="java.lang.Integer"/>
+  <Column name="panbool" value="Integer" packages="java.lang.Integer"/>
+  <Column name="pandate" value="Date" packages="java.util.Date"/>
+  <Column name="pantime" value="Date" packages="java.util.Date"/>
+  <Column name="pandatetime" value="Date" packages="java.util.Date"/>
+  <Column name="panchar" value="String" packages="java.lang.String"/>
+  <Column name="panvarchar" value="String" packages="java.lang.String"/>
+  <Column name="pantext" value="String" packages="java.lang.String"/>
+  <Column name="pandcml" value="BigDecimal" packages="java.math.BigDecimal"/>
+  <Column name="panmoney" value="BigDecimal" packages="java.math.BigDecimal"/>
+  <Column name="panquantity" value="BigDecimal" packages="java.math.BigDecimal"/>
+  <Column name="pantaxrate" value="BigDecimal" packages="java.math.BigDecimal"/>
+  <Column name="pantaxprice" value="BigDecimal" packages="java.math.BigDecimal"/>
+  <Column name="panprice" value="BigDecimal" packages="java.math.BigDecimal"/>
+</ColumnMap>

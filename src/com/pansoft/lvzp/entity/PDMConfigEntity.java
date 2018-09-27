@@ -1,7 +1,5 @@
 package com.pansoft.lvzp.entity;
 
-import java.util.List;
-
 /**
  * 作者：吕振鹏
  * E-mail:lvzhenpeng@pansoft.com
@@ -11,11 +9,11 @@ import java.util.List;
  * 类描述：
  * 修改时间：
  */
-public class ConfigEntity {
+public class PDMConfigEntity {
 
     private String name;
     private String namespace;
-    private ConfigEntity child;
+    private PDMConfigEntity child;
 
     public String getName() {
         return name;
@@ -33,11 +31,11 @@ public class ConfigEntity {
         this.namespace = namespace;
     }
 
-    public ConfigEntity getChild() {
+    public PDMConfigEntity getChild() {
         return child;
     }
 
-    public void setChild(ConfigEntity child) {
+    public void setChild(PDMConfigEntity child) {
         this.child = child;
     }
 }
