@@ -3,13 +3,11 @@ package com.pansoft.lvzp.utils;
 import com.pansoft.lvzp.entity.ConfigNamespace;
 import com.pansoft.lvzp.entity.XmlNamespace;
 import com.pansoft.lvzp.entity.XmlNamespace.ValueType;
-import groovy.util.logging.Slf4j;
 import org.jdom.Attribute;
 import org.jdom.Element;
 import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.pansoft.lvzp.entity;
 
-public class PansoftFieldEntify {
+public class PansoftFieldEntity {
 
   private String name;
   private String value;

@@ -2,7 +2,7 @@ package com.pansoft.lvzp.utils;
 
 import com.pansoft.lvzp.entity.ConfigNamespace;
 import com.pansoft.lvzp.entity.PDMConfigEntity;
-import com.pansoft.lvzp.entity.PansoftFieldEntify;
+import com.pansoft.lvzp.entity.PansoftFieldEntity;
 import java.util.ArrayList;
 import java.util.List;
 import org.jdom.Attribute;
@@ -50,18 +50,18 @@ public class PDMUtils {
     }
   }
 
-  public static List<PansoftFieldEntify> buildFileTypes(Element rootElement) {
-    List<PansoftFieldEntify> retData = new ArrayList<>();
+  public static List<PansoftFieldEntity> buildFileTypes(Element rootElement) {
+    List<PansoftFieldEntity> retData = new ArrayList<>();
     List<Element> children = rootElement.getChildren();
     children.forEach(it -> {
       Attribute name = it.getAttribute("name");
       Attribute value = it.getAttribute("value");
       Attribute packages = it.getAttribute("packages");
-      PansoftFieldEntify pansoftFieldEntify = new PansoftFieldEntify();
-      pansoftFieldEntify.setName(name.getValue());
-      pansoftFieldEntify.setValue(value.getValue());
-      pansoftFieldEntify.setPackages(packages.getValue());
-      retData.add(pansoftFieldEntify);
+      PansoftFieldEntity pansoftFieldEntity = new PansoftFieldEntity();
+      pansoftFieldEntity.setName(name.getValue());
+      pansoftFieldEntity.setValue(value.getValue());
+      pansoftFieldEntity.setPackages(packages.getValue());
+      retData.add(pansoftFieldEntity);
     });
     return retData;
   }
