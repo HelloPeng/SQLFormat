@@ -399,26 +399,7 @@ public class PdmFileSelectDialog extends JDialog {
     return null;
   }
 
-  private PsiAnnotation getPsiAnn(PsiModifierListOwner psiTag, AnnType annType) {
-    PsiAnnotation[] annotations = psiTag.getAnnotations();
-    for (PsiAnnotation annotation : annotations) {
-      if (!StringUtil.isEmpty(annotation.getText()) && annotation.getText()
-          .contains(annType.getClassName())) {
-        return annotation;
-      }
-    }
-    return null;
-  }
-
   private boolean isPsiAnnEmpty(PsiModifierListOwner psiTag, AnnType annType) {
-  /*  PsiAnnotation[] annotations = psiTag.getAnnotations();
-    for (PsiAnnotation annotation : annotations) {
-      if (!StringUtil.isEmpty(annotation.getText()) && annotation.getText()
-          .contains(annType.getClassName())) {
-        return false;
-      }
-    }
-    return true;*/
     return psiTag.getAnnotation(annType.getClassName()) == null;
   }
 
