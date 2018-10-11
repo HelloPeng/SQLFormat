@@ -421,7 +421,7 @@ public class PdmFileSelectDialog extends JDialog {
             .append(annValue.getValue().toLowerCase())
             .append("\"");
         if (i + 1 < length) {
-          sb.append(";");
+          sb.append(", ");
         }
       }
       sb.append(")");
