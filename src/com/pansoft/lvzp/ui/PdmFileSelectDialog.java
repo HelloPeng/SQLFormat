@@ -30,6 +30,7 @@ import com.intellij.psi.util.PsiTreeUtil;
 import com.pansoft.lvzp.AnnType;
 import com.pansoft.lvzp.AnnValue;
 import com.pansoft.lvzp.entity.ColumnEntity;
+import com.pansoft.lvzp.entity.KeyEntry;
 import com.pansoft.lvzp.entity.PDMConfigEntity;
 import com.pansoft.lvzp.entity.PansoftFieldEntity;
 import com.pansoft.lvzp.entity.TableEntity;
@@ -215,8 +216,13 @@ public class PdmFileSelectDialog extends JDialog {
         System.out.println("当前需要创建的文件为 = " + clsName);
         if (directory != null) {
           PsiFile currentFile = directory.findFile(clsName + ".java");
+          List<KeyEntry> keys = clsIt.getKeys();
+          if (keys == null || keys.isEmpty()){
+            Toast.make(project,MessageType.ERROR,"PDM格式不标准，无法找到主键");
+            return;
+          }
           //获取该类的主键列的ID
-          String ref = clsIt.getKeys().get(0).getKeyColumnsEntryList().get(0).getRef();
+          String ref = keys.get(0).getKeyColumnsEntryList().get(0).getRef();
           //Todo 2018年10月5日 在文件存在的情况下，需要考虑按照pdm的格式排序成员变量
           //判断当前的文件是否不为空，如果不为空需要对Java文件的属性重构
           if (currentFile != null) {

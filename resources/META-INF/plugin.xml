@@ -1,6 +1,6 @@
 <idea-plugin>
     <name>SQLFormat</name>
-    <version>2.0</version>
+    <version>2.0.2</version>
     <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
     <description><![CDATA[
